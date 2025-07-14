@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+eureka:
+  instance:
+    hostname: localhost  # Hostname o'rniga localhost ishlatish
+    prefer-ip-address: false  # IP manzilni ko'rsatish
+    ip-address: 127.0.0.1  # Aniq IP manzil
