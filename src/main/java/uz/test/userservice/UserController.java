@@ -1,5 +1,6 @@
 package uz.test.userservice;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/users")
-
+@Tag(name = "User API", description = "Mahsulotlar bilan ishlash uchun operatsiyalar")
 public class UserController {
 
     @GetMapping("/{id}")
